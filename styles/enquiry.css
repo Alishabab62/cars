@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+.container{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container .sub-container{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .sub-container a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+
+/* form */
+
+
+.heading{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-container{
+    width: 50%;
+    margin: auto;
+}
+.form-container fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 0px;
+} 
+
+.form-container input,select{
+    height: 30px;
+}
+.form-container label,legend{
+    margin: 3px 0px;
+    color: rgb(210, 180, 239);
+}
+.form-container fieldset div{
+    display: flex;
+    align-items: center;
+}
+.form-container fieldset div span{
+    margin-left: 5px;
+}
+.form-container button{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+footer .footer-container{
+    width: 95%;
+    display: flex;
+    padding: 40px 0px;
+}
+footer .container1, .container2 ,.container3{
+    width: 33%;
+}
+footer .container1 h1 a{
+    color: rgb(7, 27, 92);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .container1 h2{
+    background-color: green;
+    width: fit-content;
+    color: white;
+    font-size: 0.8em;
+    font-weight: normal;   
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 16px;
+    border-radius: 16px;
+    margin-top: 15px;
+}
+footer .container2 .sub-container{
+    display: flex;
+    flex-direction: column;
+}
+footer .container2 .sub-container a{
+    text-decoration: none;
+    color: #1b48dd;
+    margin-bottom: 6px;
+}
+footer .container3 h1{
+    text-align: center;
+    color: rgb(168, 32, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 7px;
+}
+.footer-container .container3 p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
