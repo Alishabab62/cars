@@ -3,14 +3,10 @@ const indicators = document.querySelectorAll(".indicator");
 
 let counter = 0;
 const slides = carouselSlide.querySelectorAll("img");
-const slideWidth = carouselSlide.clientWidth;
-const imageCount = slides.length;
-carouselSlide.style.setProperty("--image-count", imageCount);
-
 let autoSlideInterval;
 
 function updateSlide() {
-  carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
+  carouselSlide.style.transform = `translateX(${-100 * counter}%)`;
 
   indicators.forEach((indicator, index) => {
     if (index === counter) {
@@ -23,14 +19,13 @@ function updateSlide() {
 
 function autoSlide() {
   counter++;
-  if (counter >= imageCount) {
+  if (counter >= slides.length) {
     counter = 0;
   }
   updateSlide();
 }
 
 function startAutoSlide() {
-  stopAutoSlide(); // Clear any existing interval to avoid conflicts
   autoSlideInterval = setInterval(autoSlide, 3000);
 }
 

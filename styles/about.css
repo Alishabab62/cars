@@ -21,85 +21,44 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
-.banner-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+.about-container h1{
+    text-align: center;
+    margin: 25px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(71, 15, 124);
 }
-.banner-container .banner-images{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-image: url('../styles/images/josh-berquist-_4sWbzH5fp8-unsplash.jpg');
-    display: flex;
-    justify-content: center;
+.about-container h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(168, 32, 8);
+    margin: 20px 0px;
 }
-.banner-container .banner-images .banner-images-text{
-    position: absolute;
-    bottom: 5px;
-    z-index: 5;
+.about-container h4{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
+    color: green;
 }
-.banner-container .banner-images-text h1{
-    color: rgb(168, 32, 8);
-    margin-bottom: 10px;
+.about-container table, tr,td{
+    border: 1px solid rgb(168, 32, 8);
+    border-collapse: collapse;
+    padding: 10px;
 }
-.banner-container .banner-images-text h3{
-    color: white;
-    font-size: 0.9em;
-    letter-spacing: 0.7px;
+.about-container table{
+    width: 500px;
+    margin: 40px  auto ;
 }
-.carousel-container {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  
-  .carousel-slide {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .carousel-slide img {
-    flex: 0 0 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .indicator {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: gray;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .active {
-    background-color: black;
-  }
-  
+.about-container table .label{
+    background-color: #8099e4;
+    color: rgb(71, 15, 124);
+}
+
 footer{
     width: 100%;
     background-color: rgb(187, 187, 187);
     display: flex;
     justify-content: center;
+    margin-top: 55px;
 }
 footer .footer-container{
     width: 95%;
@@ -146,10 +105,3 @@ footer .container3 h1{
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
 }
-
-
-  
-  
-  
-  
-  

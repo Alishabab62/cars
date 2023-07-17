@@ -21,80 +21,94 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
-.banner-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.banner-container .banner-images{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-image: url('../styles/images/josh-berquist-_4sWbzH5fp8-unsplash.jpg');
-    display: flex;
-    justify-content: center;
-}
-.banner-container .banner-images .banner-images-text{
-    position: absolute;
-    bottom: 5px;
-    z-index: 5;
+
+
+
+.product-container h1{
     text-align: center;
+    margin: 25px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
+    color: rgb(71, 15, 124);
 }
-.banner-container .banner-images-text h1{
+.product-container h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     color: rgb(168, 32, 8);
-    margin-bottom: 10px;
+    margin: 20px 0px;
 }
-.banner-container .banner-images-text h3{
-    color: white;
-    font-size: 0.9em;
-    letter-spacing: 0.7px;
-}
-.carousel-container {
-    position: relative;
+.product-container .product-image{
     width: 100%;
-    height: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  
-  .carousel-slide {
     display: flex;
+    flex-wrap: wrap;
+}
+.product-container img{
+    width: 31.9%;
+    height: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.product-container table, tr,td,th{
+    border: 1px solid rgb(168, 32, 8);
+    border-collapse: collapse;
+    padding: 10px;
+}
+.product-container th{
+    background-color: #8099e4;
+    color: rgb(71, 15, 124);
+}
+.product-container table{
+    width: 500px;
+    margin: 40px  auto ;
+}
+.product-container td{
+    color: #8099e4  ;
+}
+.product-container p{
+    font-size: 1.3em;
+    color: lightslategray;
+    margin: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pros-cons-container{
+    width: 450px;
+    margin: auto;
+    display: flex;
+}
+.pros-cons-container .sub-div{
+    padding: 20px;
+    border: 1px solid black;
+}
+.pros-cons-container span{
+    color: #8099e4;
+}
+.pros-cons-container ol li{
+    color: #8099e4;
+}
+.product-container .note-container{
+    background-color: rgb(44, 124, 44);
+    padding: 10px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+.price{
     width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .carousel-slide img {
-    flex: 0 0 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .indicator {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: gray;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .active {
-    background-color: black;
-  }
-  
+}
+.price h3{
+    color: rgb(168, 32, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+}
+.price .cont{
+    width: fit-content;
+    margin: auto;
+    color: #8099e4;
+    text-align: center;
+}
 footer{
     width: 100%;
     background-color: rgb(187, 187, 187);
@@ -146,10 +160,3 @@ footer .container3 h1{
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
 }
-
-
-  
-  
-  
-  
-  
