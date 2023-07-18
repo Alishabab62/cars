@@ -17,75 +17,92 @@
         </div>
     </div>
     <h3 class="heading">Enquiry Form</h3>
-    <div class="form-container">
-        <fieldset>
+    <form id="enquiryForm" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+        <div class="form-container">
+          <fieldset>
             <legend>Personal Information</legend>
-            <label for="name">First Name:</label>
-            <input type="text" name="fname" id="">
-            <label for="name">Last Name:</label>
-            <input type="text" name="lname" id="">
-            <label for="name">Email Address:</label>
-            <input type="email" name="email" id="">
-        </fieldset>
-        <fieldset>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email">
+          </fieldset>
+      
+          <fieldset>
             <legend>Address</legend>
             <label for="street">Street Address:</label>
-            <input type="text" name="street" id="">
-            <label for="Suburb">Suburb/Town:</label>
-            <input type="text" name="suburb" id="">
-            <label for="State">State:</label>
-            <select name="state" id="">
-                <option value="vic">VIC</option>
-            </select>
-            <label for="postcode">State</label>
-            <select name="postCode" id="">
-                <option value="vic">VIC</option>
+            <input type="text" name="street" id="street">
+            <label for="suburb">Suburb/Town:</label>
+            <input type="text" name="suburb" id="suburb">
+            <label for="state">State:</label>
+            <select name="state" id="state">
+              <option value="VIC">VIC</option>
+              <option value="VIC">NSW</option>
+              <option value="VIC">QLD</option>
+              <option value="VIC">NT</option>
+              <option value="VIC">WA</option>
+              <option value="VIC">SA</option>
+              <option value="VIC">TAS</option>
+              <option value="VIC">ACT</option>
             </select>
             <label for="postcode">Postcode:</label>
-            <input type="text">
-        </fieldset>
-        <fieldset>
+            <input type="text" name="postcode" id="postcode">
+          </fieldset>
+      
+          <fieldset>
             <legend>Contact Information</legend>
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="">
-            <label for="">Preferred Contact</label>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="preferred-contact">Preferred Contact:</label>
             <div>
-                <input type="radio" name="" id=""><span>Email</span>
+              <input type="radio" name="preferred-contact" id="email-contact" value="Email">
+              <label for="email-contact">Email</label>
             </div>
             <div>
-                <input type="radio" name="" id=""><span>Post</span>
+              <input type="radio" name="preferred-contact" id="post-contact" value="Post">
+              <label for="post-contact">Post</label>
             </div>
             <div>
-                <input type="radio" name="" id=""><span>Phone</span>
+              <input type="radio" name="preferred-contact" id="phone-contact" value="Phone">
+              <label for="phone-contact">Phone</label>
             </div>
-        </fieldset>
-        <fieldset>
+          </fieldset>
+      
+          <fieldset>
             <legend>Product Information</legend>
-            <label for="phone">Product Model</label>
-            <select name="" id="">
-                <option value="">BMW iX1</option>
+            <label for="product-model">Product Model:</label>
+            <select name="product-model" id="product-model">
+              <option value="BMW iX1">BMW iX1</option>
             </select>
-            <label for="">Product Features</label>
+            <label for="product-features">Product Features:</label>
             <div>
-                <input type="radio" name="" id=""><span>Electric Powertrain</span>
+              <input type="checkbox" name="product-features" id="electric-powertrain" value="Electric Powertrain">
+              <label for="electric-powertrain">Electric Powertrain</label>
             </div>
             <div>
-                <input type="radio" name="" id=""><span>Range and Performance</span>
+              <input type="checkbox" name="product-features" id="range-performance" value="Range and Performance">
+              <label for="range-performance">Range and Performance</label>
             </div>
             <div>
-                <input type="radio" name="" id=""><span>Design and Styling</span>
+              <input type="checkbox" name="product-features" id="design-styling" value="Design and Styling">
+              <label for="design-styling">Design and Styling</label>
             </div>
             <div>
-                <input type="radio" name="" id=""><span>Safety Features</span>
+              <input type="checkbox" name="product-features" id="safety-features" value="Safety Features">
+              <label for="safety-features">Safety Features</label>
             </div>
-        </fieldset>
-        <fieldset>
+          </fieldset>
+      
+          <fieldset>
             <legend>Additional Comments</legend>
-            <label for="">Comment</label>
-            <textarea name="" id="" cols="30" rows="3" placeholder="Enter your comment"></textarea>
-        </fieldset>
-        <button>Submit</button>
-    </div>
+            <label for="comments">Comment:</label>
+            <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Enter your comment"></textarea>
+          </fieldset>
+      
+          <button type="submit">Submit</button>
+        </div>
+      </form>      
     <footer>
         <div class="footer-container">
             <div class="container1">
