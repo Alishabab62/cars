@@ -1,30 +1,33 @@
 const productFeatures = [{
     id:1,
     fuelType:"Diesel",
+    model:"Model1",
     transmissionMode:"Automatic",
     engine:"3.0-liter inline-6 turbocharged diesel engine",
     powerTorque:"330 lb-ft",
-    price:"$55,000",
+    price:55000,
     pros:["A","B","C"],
     cons:["A","B","C"],
     description:"The BMW X5 is a luxury midsize SUV that combines performance, comfort, and advanced features. With its sleek and muscular design, the X5 offers a strong presence on the road. The interior is spacious and well-appointed, providing a luxurious and comfortable driving experience for both the driver and passengers."
 },{
     id:2,
     fuelType:"Diesel",
+    model:"Model2",
     transmissionMode:"Automatic",
     engine:"3.0-liter inline-6 turbocharged diesel engine",
     powerTorque:"330 lb-ft",
-    price:"$57,000",
+    price:57000,
     pros:["A","B","C"],
     cons:["A","B","C"],
     description:"The BMW X5 is a luxury midsize SUV that combines performance, comfort, and advanced features. With its sleek and muscular design, the X5 offers a strong presence on the road. The interior is spacious and well-appointed, providing a luxurious and comfortable driving experience for both the driver and passengers."
 },{
     id:3,
     fuelType:"Diesel",
+    model:"Model3",
     transmissionMode:"Automatic",
     engine:"3.0-liter inline-6 turbocharged diesel engine",
     powerTorque:"330 lb-ft",
-    price:"$59,000",
+    price:59000,
     pros:["A","B","C"],
     cons:["A","B","C"],
     description:"The BMW X5 is a luxury midsize SUV that combines performance, comfort, and advanced features. With its sleek and muscular design, the X5 offers a strong presence on the road. The interior is spacious and well-appointed, providing a luxurious and comfortable driving experience for both the driver and passengers."

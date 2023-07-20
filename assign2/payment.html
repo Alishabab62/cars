@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/payment.css">
+    <title>Cars - Payment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <a href="../index.html">Home</a>
+            <a href="./product.html">Product</a>
+            <a href="./enquiry.html">Enquire</a>
+            <a href="./about.html">About</a>
+            <a href="./enhnacement.html">Enhancements</a>
+        </div>
+    </div>
+    <div class="product-container">
+        <h2 class="heading">Product Payment</h2>
+        <fieldset>
+            <legend>Customer Details</legend>
+            <p><b>First Name: </b> <span id="customerFirstName"></span></p>
+            <p><b>Last Name:</b><span id="customerLastName"></span></p>
+            <p><b>Email:</b><span id="customerEmail"></span></p>
+            <p><b>Phone Number:</b><span id="customerPhone"></span></p>
+        </fieldset>
+        <fieldset>
+            <legend>Product Selection Details</legend>
+            <p><b>Product Model:</b> <span id="selectedProductModel"></span></p>
+            <p><b>Quantity:</b> <span id="selectedProductQuantity"></span></p>
+            <p><b>Price:</b>$ <span id="selectedProductPrice"></span></p>
+            <p><b>Total Price:</b>$<span id="totalPrice"></span></p>
+        </fieldset>
+
+
+        <h3></h3>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <div class="timer-container">
+                <div id="timer" class="timer">60</div>
+                <div id="warning" class="warning"></div>
+            </div>
+            <form id="paymentForm">
+                <label for="cardType">Credit Card Type:</label>
+                <select name="cardType" id="cardType" required>
+                    <option value="">Select Card Type</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="American Express">American Express</option>
+                </select>
+    
+                <label for="cardName">Name on Credit Card:</label>
+                <input type="text" name="cardName" id="cardName" required>
+    
+                <label for="cardNumber">Credit Card Number:</label>
+                <input type="text" name="cardNumber" id="cardNumber" required>
+    
+                <label for="expiryDate">Credit Card Expiry Date (mm-yy):</label>
+                <input type="month" name="expiryDate" id="expiryDate" required >
+    
+                <label for="cvv">Card Verification Value (CVV):</label>
+                <input type="text" name="cvv" id="cvv" required>
+    
+                <button type="submit">Pay Now</button>
+            </form>
+        </fieldset>
+        
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container1">
+                <h1><a href="#">Cars.com</a></h1>
+                <h2>Email Us</h2>
+            </div>
+            <div class="container2">
+                <div class="sub-container">
+                    <a href="./index.html">Home</a>
+                    <a href="./assign2/product.html">Product</a>
+                    <a href="./assign2/enquiry.html">Enquire</a>
+                    <a href="./assign2/about.html">About</a>
+                    <a href="./enhnacement.html">Enhancements</a>
+            </div>
+        </div>
+        <div class="container3">
+            <h1>About</h1>
+            <p>We help you find the perfect car that matches your desires and needs. With tour extensive knowledge and expertise in the automotive industry, we strive to make your car buying journey smooth, enjoyable, and hassle free.</p>
+        </div>
+    </div>
+    </footer>
+    <script src="../scripts/payment.js"></script>
+</body>
+</html>

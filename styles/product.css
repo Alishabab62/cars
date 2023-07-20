@@ -14,6 +14,7 @@
     width: 25%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .container .sub-container a{
     text-decoration: none;
@@ -22,7 +23,10 @@
     font-size: 1em;
 }
 
-
+#page{
+    background-color: #1b48dd;
+    padding: 26px 15px;
+}
 
 .product-container h1{
     text-align: center;

@@ -13,6 +13,7 @@
 .container .sub-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .container .sub-container a{
     margin: 0px 5px;
@@ -22,6 +23,10 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+}
+#page{
+    background-color: #1b48dd;
+    padding: 26px 15px;
 }
 .banner-container{
     width: 100%;

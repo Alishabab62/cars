@@ -17,6 +17,7 @@
     width: 25%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .container .sub-container a{
     text-decoration: none;
@@ -25,7 +26,10 @@
     font-size: 1em;
 }
 
-
+#page{
+    background-color: #1b48dd;
+    padding: 26px 15px;
+}
 /* form */
 
 
@@ -65,10 +69,14 @@
     border-radius: 5px;
     color: white;
     padding: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-
+#delivery-address-input{
+    display: none;
+}
 
 /* footer */
 

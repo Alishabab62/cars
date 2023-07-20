@@ -48,8 +48,32 @@
             </select>
             <label for="postcode">Postcode:</label>
             <input type="text" name="postcode" id="postcode">
+            <div>
+              <input type="checkbox" name="" id="delivery-address"><span>Billing address different from Delivery Address</span>
+            </div>
           </fieldset>
 
+          <fieldset id="delivery-address-input">
+            <legend>Delivery Address</legend>
+            <label for="street">Street Address:</label>
+            <input type="text" name="street" id="street1">
+            <label for="suburb">Suburb/Town:</label>
+            <input type="text" name="suburb" id="suburb1">
+            <label for="state">State:</label>
+            <select name="state" id="state1">
+              <option value="VIC">VIC</option>
+              <option value="VIC">NSW</option>
+              <option value="VIC">QLD</option>
+              <option value="VIC">NT</option>
+              <option value="VIC">WA</option>
+              <option value="VIC">SA</option>
+              <option value="VIC">TAS</option>
+              <option value="VIC">ACT</option>
+            </select>
+            <label for="postcode">Postcode:</label>
+            <input type="text" name="postcode" id="postcode1">
+          </fieldset>
+      
           <fieldset>
             <legend>Contact Information</legend>
             <label for="phone">Phone Number:</label>
@@ -128,6 +152,6 @@
         </div>
     </div>
     </footer>
-    <script src="../scripts/enquiry.js"></script>
+    <script src="../scripts/enhancement.js"></script>
 </body>
 </html>
