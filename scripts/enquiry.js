@@ -10,7 +10,7 @@ productModel.addEventListener("change",()=>{
 payBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
-  const fName = document.getElementById("fname").value;
+  const fName = document.getElementById("fname").value; 
   const lName = document.getElementById("lname").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
