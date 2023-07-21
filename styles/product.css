@@ -9,9 +9,9 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+    position: relative;
 }
 .container .sub-container{
-    width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,21 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    margin: 0px 10px;
+    padding: 26px 15px;
+}
+.container .sub-container a:hover{
+  background-color: #1b48dd;
+}
+.container .logo{
+  position: absolute;
+  left: 30px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.container .logo a{
+  text-decoration: none;
+  color: white;
 }
 
 #page{
@@ -46,13 +60,36 @@
     display: flex;
     flex-wrap: wrap;
 }
-.product-container img{
-    width: 31.9%;
-    height: 100%;
+.product-image > div{
     height: 300px;
+    width: 31.5%;
     padding: 10px;
     border: 1px solid black;
+    position: relative;
 }
+.product-image > div img{
+    height: 300px;
+    width: 100%;
+}
+.product-image > div > div{
+    position: absolute;
+    background-color: #1b48dd;
+    bottom: 20px;
+    padding: 10px 50px;
+    left: 30%;
+    border: 2px solid rgb(168, 32, 8);
+    border-radius: 5px;
+    opacity: 0;
+    transition:  opacity 0.3s;
+}
+.product-image  a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.product-image > div:hover .hover-text {
+    opacity: 1;
+  }
 .product-container table, tr,td,th{
     border: 1px solid rgb(168, 32, 8);
     border-collapse: collapse;
@@ -123,16 +160,19 @@ footer{
 footer .footer-container{
     width: 95%;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 40px 0px;
 }
 footer .container1, .container2 ,.container3{
-    width: 33%;
+    width: 33.3%;
 }
 footer .container1 h1 a{
     color: rgb(7, 27, 92);
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 footer .container1 h2{
     background-color: green;
     width: fit-content;
@@ -144,6 +184,12 @@ footer .container1 h2{
     border-radius: 16px;
     margin-top: 15px;
 }
+footer .container1 h2 a{
+  text-decoration: none;
+  padding: 20px 10px;
+  font-size: 20px;
+  color: white;
+}
 footer .container2 .sub-container{
     display: flex;
     flex-direction: column;
@@ -152,6 +198,9 @@ footer .container2 .sub-container a{
     text-decoration: none;
     color: #1b48dd;
     margin-bottom: 6px;
+}
+footer .container2 .sub-container a:hover{
+  color: rgb(168, 32, 8);;
 }
 footer .container3 h1{
     text-align: center;

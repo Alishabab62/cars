@@ -22,7 +22,7 @@ payBtn.addEventListener("click", (e) => {
   const state = stateOptions[stateIndex].value;
   const postCode = document.getElementById("postcode").value;
 
-  // Function to check if the postcode matches the state
+ 
   function isPostCodeValid(state, postCode) {
     if (
       (state === "VIC" && (postCode.startsWith("3") || postCode.startsWith("8"))) ||

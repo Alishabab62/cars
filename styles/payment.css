@@ -9,18 +9,33 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+    position: relative;
 }
 .container .sub-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
 .container .sub-container a{
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    margin: 0px 10px;
+    padding: 26px 15px;
+}
+.container .sub-container a:hover{
+  background-color: #1b48dd;
+}
+.container .logo{
+  position: absolute;
+  left: 30px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.container .logo a{
+  text-decoration: none;
+  color: white;
 }
 
 .product-container {
@@ -106,6 +121,7 @@ footer .container1 h1 a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 footer .container1 h2{
     background-color: green;
     width: fit-content;
@@ -117,6 +133,12 @@ footer .container1 h2{
     border-radius: 16px;
     margin-top: 15px;
 }
+footer .container1 h2 a{
+  text-decoration: none;
+  padding: 20px 10px;
+  font-size: 20px;
+  color: white;
+}
 footer .container2 .sub-container{
     display: flex;
     flex-direction: column;
@@ -125,6 +147,9 @@ footer .container2 .sub-container a{
     text-decoration: none;
     color: #1b48dd;
     margin-bottom: 6px;
+}
+footer .container2 .sub-container a:hover{
+  color: rgb(168, 32, 8);;
 }
 footer .container3 h1{
     text-align: center;
