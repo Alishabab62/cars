@@ -52,24 +52,27 @@ payBtn.addEventListener("click", (e) => {
   };
 
   if (
-    selectedProduct != undefined &&
-    quantity > 0 &&
-    fName != "" &&
-    lName != "" &&
-    email != "" &&
-    phone != "" &&
-    street != "" &&
-    suburb != "" &&
-    state != "" &&
-    postCode != "" &&
-    isPostCodeValid(state, postCode)
+    selectedProduct == undefined &&
+    quantity <= 0 &&
+    fName == "" &&
+    lName == "" &&
+    email == "" &&
+    phone == "" &&
+    street == "" &&
+    suburb == "" &&
+    state == "" &&
+    postCode == ""
   ) {
+    alert("Please fill in all required fields")
+  }
+   else if(!isPostCodeValid(state, postCode)) {
+    alert("Check the state and postcode combination.");
+  }
+  else{
     localStorage.setItem("userDetails", JSON.stringify(userDetails));
     const id = productModel[selectedProduct].getAttribute("id");
     localStorage.setItem("productId", id);
     window.location.href = "./payment.html";
-  } else {
-    alert("Please fill in all required fields or check the state and postcode combination.");
   }
 });
 
