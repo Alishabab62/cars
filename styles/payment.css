@@ -14,14 +14,13 @@
     display: flex;
     justify-content: space-between;
 }
-.container .sub-container a{
-    margin: 0px 5px;
-}
+
 .container .sub-container a{
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    margin: 0px 10px;
 }
 
 .product-container {

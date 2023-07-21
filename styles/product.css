@@ -21,6 +21,7 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    margin: 0px 10px;
 }
 
 #page{
@@ -59,14 +60,14 @@
 }
 .product-container th{
     background-color: #8099e4;
-    color: rgb(71, 15, 124);
+    color:black;
 }
 .product-container table{
     width: 500px;
     margin: 40px  auto ;
 }
 .product-container td{
-    color: #8099e4  ;
+    color:black  ;
 }
 .product-container p{
     font-size: 1.3em;
@@ -85,10 +86,10 @@
     border: 1px solid black;
 }
 .pros-cons-container span{
-    color: #8099e4;
+    color:black;
 }
 .pros-cons-container ol li{
-    color: #8099e4;
+    color: black;
 }
 .product-container .note-container{
     background-color: rgb(44, 124, 44);
@@ -110,7 +111,7 @@
 .price .cont{
     width: fit-content;
     margin: auto;
-    color: #8099e4;
+    color: black;
     text-align: center;
 }
 footer{

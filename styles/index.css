@@ -16,54 +16,21 @@
     align-items: center;
 }
 .container .sub-container a{
-    margin: 0px 5px;
-}
-.container .sub-container a{
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    margin: 0px 10px;
 }
 #page{
     background-color: #1b48dd;
     padding: 26px 15px;
 }
-.banner-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.banner-container .banner-images{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-image: url('../styles/images/josh-berquist-_4sWbzH5fp8-unsplash.jpg');
-    display: flex;
-    justify-content: center;
-}
-.banner-container .banner-images .banner-images-text{
-    position: absolute;
-    bottom: 5px;
-    z-index: 5;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
-}
-.banner-container .banner-images-text h1{
-    color: rgb(168, 32, 8);
-    margin-bottom: 10px;
-}
-.banner-container .banner-images-text h3{
-    color: white;
-    font-size: 0.9em;
-    letter-spacing: 0.7px;
-}
+
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 600px;
     overflow: hidden;
     margin: 0 auto;
   }

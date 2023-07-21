@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="sub-container">
-            <a href="../index.html">Home</a>
+            <a href="../index.html" >Home</a>
             <a href="../assign2/product.html">Product</a>
             <a href="./enquiry.html" id="page">Enquire</a>
             <a href="../assign2/about.html">About</a>
@@ -22,11 +22,11 @@
           <fieldset>
             <legend>Personal Information</legend>
             <label for="fname">First Name:</label>
-            <input type="text" name="fname" id="fname" value="">
+            <input type="text" name="fname" id="fname" value="" required>
             <label for="lname">Last Name:</label>
-            <input type="text" name="lname" id="lname">
+            <input type="text" name="lname" id="lname" required>
             <label for="email">Email Address:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
           </fieldset>
       
           <fieldset>
@@ -53,10 +53,10 @@
           <fieldset>
             <legend>Contact Information</legend>
             <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" required>
             <label for="preferred-contact">Preferred Contact:</label>
             <div>
-              <input type="radio" name="preferred-contact" id="email-contact" value="Email">
+              <input type="radio" name="preferred-contact" id="email-contact" value="Email" required>
               <label for="email-contact">Email</label>
             </div>
             <div>
@@ -72,7 +72,7 @@
           <fieldset>
             <legend>Product Information</legend>
             <label for="product-model">Product Model:</label>
-            <select name="product-model" id="product-model">
+            <select name="product-model" id="product-model" required>
               <option value="">Select Model</option>
               <option value="BMW iX1" price="55000" id="1">BMW iX1 Price:$55000</option>
               <option value="BMW iX1" price="57000" id="2">BMW iX2 Price:$57000</option>
@@ -96,7 +96,7 @@
               <label for="safety-features">Safety Features</label>
             </div>
             <label for="quantity">Quantity:</label>
-            <input type="number" name="" id="quantity">
+            <input type="number" name="" id="quantity" required>
           </fieldset>
       
           <fieldset>

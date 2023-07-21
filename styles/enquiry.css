@@ -24,6 +24,7 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    margin: 0px 10px;
 }
 
 #page{
@@ -55,7 +56,7 @@
 }
 .form-container label,legend{
     margin: 3px 0px;
-    color: rgb(210, 180, 239);
+    color: black;
 }
 .form-container fieldset div{
     display: flex;

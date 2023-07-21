@@ -21,66 +21,82 @@ document.getElementById("totalPrice").innerText = userDetail.quantity * productU
   paymentForm.addEventListener("submit", (e) => {
     e.preventDefault();
   
-    document.getElementById("timer").style.display = "block"
-
+    
     const formData = new FormData(paymentForm);
     const cardType = formData.get("cardType");
     const cardName = formData.get("cardName");
     const cardNumber = formData.get("cardNumber");
     const expiryDate = formData.get("expiryDate");
     const cvv = formData.get("cvv");
-  
-    const userDetails = JSON.parse(localStorage.getItem("userDetails"));
-    const productId = localStorage.getItem("productId");
-    const product = JSON.parse(localStorage.getItem("pro"));
-    const productUI = product.filter((product) => product.id == productId);
-    const selectedProductModel = productUI[0].model;
-    const selectedProductQuantity = userDetails.quantity;
-    const selectedProductPrice = productUI[0].price;
-    const totalPrice = selectedProductQuantity * selectedProductPrice;
-    let dataToSend = {
-        cardType: cardType,
-        cardName: cardName,
-        cardNumber: cardNumber,
-        expiryDate: expiryDate,
-        cvv: cvv,
-        customerFirstName: userDetails.fName,
-        customerLastName: userDetails.lName,
-        customerEmail: userDetails.email,
-        customerPhone: userDetails.phone,
-        selectedProductModel: selectedProductModel,
-        selectedProductQuantity: selectedProductQuantity,
-        selectedProductPrice: selectedProductPrice,
-        totalPrice: totalPrice,
-        street:userDetails.street,
-        suburb:userDetails.suburb,
-        state:userDetails.state,
-        postcode:userDetails.postcode,
-      };
     
-  
-    const url = "https://mercury.swin.edu.au/it000000/formtest.php";
-    fetch(url, {
-      method: "POST",
-      body: JSON.stringify(dataToSend),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.text();
+    
+    let isValidCardNumber = false;
+    if (cardType === "Visa" && /^(?:4[0-9]{12}(?:[0-9]{3})?)$/.test(cardNumber)) {
+      isValidCardNumber = true;
+    } else if (cardType === "Mastercard" && /^(?:5[1-5][0-9]{14})$/.test(cardNumber)) {
+      isValidCardNumber = true;
+    } else if (cardType === "American Express" && /^(?:3[47][0-9]{13})$/.test(cardNumber)) {
+      isValidCardNumber = true;
+    }
+    
+    if(!isValidCardNumber){
+      alert("Invalid credit card number or card type");
+      return;
+    }
+    else{
+      document.getElementById("timer").style.display = "block"
+      const userDetails = JSON.parse(localStorage.getItem("userDetails"));
+      const productId = localStorage.getItem("productId");
+      const product = JSON.parse(localStorage.getItem("pro"));
+      const productUI = product.filter((product) => product.id == productId);
+      const selectedProductModel = productUI[0].model;
+      const selectedProductQuantity = userDetails.quantity;
+      const selectedProductPrice = productUI[0].price;
+      const totalPrice = selectedProductQuantity * selectedProductPrice;
+      let dataToSend = {
+          cardType: cardType,
+          cardName: cardName,
+          cardNumber: cardNumber,
+          expiryDate: expiryDate,
+          cvv: cvv,
+          customerFirstName: userDetails.fName,
+          customerLastName: userDetails.lName,
+          customerEmail: userDetails.email,
+          customerPhone: userDetails.phone,
+          selectedProductModel: selectedProductModel,
+          selectedProductQuantity: selectedProductQuantity,
+          selectedProductPrice: selectedProductPrice,
+          totalPrice: totalPrice,
+          street:userDetails.street,
+          suburb:userDetails.suburb,
+          state:userDetails.state,
+          postcode:userDetails.postcode,
+        };
+      
+    
+      const url = "https://mercury.swin.edu.au/it000000/formtest.php";
+      fetch(url, {
+        method: "POST",
+        body: JSON.stringify(dataToSend),
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
-      .then((data) => {
-        console.log("Payment successful:", data);
-        startTimer();
-        paymentForm.reset();
-      })
-      .catch((error) => {
-        console.error("Payment failed:", error);
-      });
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.text();
+        })
+        .then((data) => {
+          console.log("Payment successful:", data);
+          startTimer();
+          paymentForm.reset();
+        })
+        .catch((error) => {
+          console.error("Payment failed:", error);
+        });
+    }
   });
   
 
